@@ -51,3 +51,9 @@ end, { desc = "terminal new horizontal term" })
 map("n", "<leader>tv", function()
   require("nvchad.term").new { pos = "vsp" }
 end, { desc = "terminal new vertical window" })
+
+-- adhoc
+map("n", "<leader>cd", function()
+  local git_dir = vim.fn.finddir(".git/..", vim.fn.expand "%:p:h" .. ";")
+  vim.api.nvim_set_current_dir(git_dir)
+end, { desc = "change directory to the nearest .git" })
