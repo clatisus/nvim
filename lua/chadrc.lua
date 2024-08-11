@@ -84,11 +84,13 @@ local M = {
       header = week_header(),
 
       buttons = {
+        { "  Create New Buffer", "Spc b n", "Create New Buffer"},
         { "  Find File", "Spc f f", "Telescope find_files" },
         { "󱋡  Recent Files", "Spc f o", "Telescope oldfiles" },
         { "󰈭  Find Word", "Spc f w", "Telescope live_grep" },
         { "  Bookmarks", "Spc m a", "Telescope marks" },
         { "  Edit Nvim Config", "Spc n v", "Edit Neovim config" },
+        { "󰌌  Search Keymaps", "Spc k b", "Telescope keymaps"},
       },
     },
   },

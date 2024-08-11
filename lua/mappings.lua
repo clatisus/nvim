@@ -55,12 +55,14 @@ end, { desc = "terminal new vertical window" })
 -- adhoc
 local function tcd_nearest_git()
   local git_dir = vim.fn.finddir(".git/..", vim.fn.expand "%:p:h" .. ";")
-  vim.cmd('tcd' .. ' ' .. git_dir)
+  vim.cmd("tcd" .. " " .. git_dir)
 end
 map("n", "<leader>cd", tcd_nearest_git, { desc = "change tab directory to the nearest .git" })
 
 del("n", "<leader>n")
 map("n", "<leader>nv", function()
-  vim.cmd('e' .. ' ' .. '~/.config/nvim/init.lua')
+  vim.cmd("e" .. " " .. "~/.config/nvim/init.lua")
   tcd_nearest_git()
 end, { desc = "edit neovim config" })
+
+map("n", "<leader>kb", "<cmd>Telescope keymaps<CR>", { desc = "Telescope keymaps" })
