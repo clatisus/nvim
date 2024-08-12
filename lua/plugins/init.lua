@@ -16,7 +16,7 @@ return {
     "ggandor/leap.nvim",
     lazy = false,
     config = function()
-      vim.keymap.set({ "n", "x"}, "s", "<Plug>(leap)")
+      vim.keymap.set({ "n", "x" }, "s", "<Plug>(leap)")
       vim.keymap.set("o", "l", "<Plug>(leap)")
       vim.keymap.set("n", "gs", "<Plug>(leap-from-window)")
       require("leap").opts.safe_labels = {}
@@ -80,5 +80,11 @@ return {
         end,
       },
     },
+  },
+
+  {
+    "m4xshen/hardtime.nvim",
+    dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
+    opts = {},
   },
 }
