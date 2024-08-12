@@ -5,6 +5,7 @@ local wk = require "which-key"
 local map = vim.keymap.set
 local del = vim.keymap.del
 
+map("n", "<A-a>", "ggVG", { desc = "Select the whole buffer" })
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
