@@ -83,6 +83,17 @@ return {
   },
 
   {
+    "folke/zen-mode.nvim",
+    cmd = { "ZenMode" },
+    opts = {
+      window = {
+        width = 0.85,
+      },
+    },
+  },
+
+  -------------------------------------- Disabled Plugins --------------------------------------
+  {
     "m4xshen/hardtime.nvim",
     event = "VeryLazy",
     enabled = false,

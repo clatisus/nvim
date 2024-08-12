@@ -53,6 +53,9 @@ map("n", "<leader>tv", function()
   require("nvchad.term").new { pos = "vsp" }
 end, { desc = "terminal new vertical window" })
 
+-- zen mode
+map("n", "<leader>zm", "<cmd>ZenMode<CR>", { desc = "Toggle ZenMode" })
+
 -- adhoc
 local function tcd_nearest_git()
   local git_dir = vim.fn.finddir(".git/..", vim.fn.expand "%:p:h" .. ";")
