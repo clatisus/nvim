@@ -69,4 +69,4 @@ map("n", "<leader>nv", function()
   tcd_nearest_git()
 end, { desc = "edit neovim config" })
 
-map("n", "<leader>kb", "<cmd>Telescope keymaps<CR>", { desc = "Telescope keymaps" })
+map("n", "<leader>fk", "<cmd>Telescope keymaps<CR>", { desc = "Telescope keymaps" })

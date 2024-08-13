@@ -90,7 +90,7 @@ local M = {
         { "󰈭  Find Word", "Spc f w", "Telescope live_grep" },
         { "  Bookmarks", "Spc m a", "Telescope marks" },
         { "  Edit Nvim Config", "Spc n v", "Edit Neovim config" },
-        { "󰌌  Search Keymaps", "Spc k b", "Telescope keymaps"},
+        { "󰌌  Search Keymaps", "Spc f k", "Telescope keymaps"},
       },
     },
   },
