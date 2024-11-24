@@ -56,6 +56,11 @@ end, { desc = "terminal new vertical window" })
 -- zen mode
 map("n", "<leader>zm", "<cmd>ZenMode<CR>", { desc = "Toggle ZenMode" })
 
+-- fns
+map("n", "<leader>sc", function()
+  require("fns.switchcase").switch_case()
+end, { desc = "Switch Case" })
+
 -- adhoc
 local function tcd_nearest_git()
   local git_dir = vim.fn.finddir(".git/..", vim.fn.expand "%:p:h" .. ";")
